@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="in" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="55c141e2-e176-4ef3-ba7a-18d7b959d620">
+    <style name="Title" fontName="Arial" fontSize="20" isBold="true"/>
+    <style name="Detail" fontName="Arial" fontSize="12"/>
+    <style name="Head" forecolor="#B89F7D" backcolor="#70A9C6" fontSize="12"/>
+    <field name="id" class="java.lang.Integer"/>
+    <field name="productName" class="java.lang.String"/>
+    <field name="stock" class="java.lang.Integer"/>
+    <field name="price" class="java.lang.Double"/>
+    <field name="pictureUrl" class="java.lang.String"/>
+    <field name="idCategory" class="java.lang.Integer"/>
+    <group name="Header">
+        <groupHeader>
+            <band height="45">
+                <staticText>
+                    <reportElement style="Title" x="190" y="0" width="188" height="40" uuid="e0a894d8-c6c9-4354-8ac2-dda9bd379f5c"/>
+                    <text><![CDATA[Product Report]]></text>
+                </staticText>
+            </band>
+        </groupHeader>
+    </group>
+    <group name="username_group"/>
+    <detail>
+        <band height="108" splitType="Stretch">
+            <textField>
+                <reportElement x="20" y="82" width="79" height="20" uuid="2fbd5183-3b8f-4d65-9dfd-fde6e523f326"/>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="99" y="80" width="101" height="20" uuid="07d3d5cc-6645-4ca5-b2e3-5d949a432b1b"/>
+                <textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="80" width="49" height="20" uuid="b94e6dbb-8fa2-412f-abfb-245513c5602a"/>
+                <textFieldExpression><![CDATA[$F{stock}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="80" width="69" height="20" uuid="aabfc8bb-b997-451d-8cd8-5a77aeb0a54a"/>
+                <textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="320" y="82" width="129" height="20" uuid="b36a6f9d-4041-40bb-b538-98e8f8a239bb"/>
+                <textFieldExpression><![CDATA[$F{pictureUrl}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="449" y="82" width="100" height="20" uuid="65baf226-ca8a-4f9a-927a-3c29b2f911cb"/>
+                <textFieldExpression><![CDATA[$F{idCategory}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="-1" y="100" width="555" height="1" uuid="5fb2dc47-33f2-4465-98c8-8546346f0b29"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineColor="#999999"/>
+                </graphicElement>
+            </line>
+            <staticText>
+                <reportElement style="Head" x="460" y="30" width="89" height="20" uuid="265784ac-3cd9-4dca-92b2-c3d061ecee2b"/>
+                <text><![CDATA[Category ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Head" x="320" y="30" width="129" height="20" uuid="6b5f742b-df7a-4067-abac-d885e410f1c7"/>
+                <text><![CDATA[Picture URL]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Head" x="250" y="30" width="69" height="20" uuid="2386ec6c-a70b-4924-8580-d3c01aed8ab1"/>
+                <text><![CDATA[Price (Rp.)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Head" x="200" y="30" width="49" height="20" uuid="0da54ff8-61bb-4304-9464-038bd366275e"/>
+                <text><![CDATA[Stock]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Head" x="100" y="30" width="99" height="20" uuid="6704401c-0588-4bb0-bf4f-d0c89c5c2dcc"/>
+                <text><![CDATA[Product Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Head" x="20" y="30" width="79" height="20" uuid="d920dea5-8efe-439f-bc08-e31b85c3c77b"/>
+                <text><![CDATA[Product ID]]></text>
+            </staticText>
+        </band>
+    </detail>
+</jasperReport>
